@@ -1,0 +1,440 @@
+/* Basic CSS Design */ 
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	box-sizing:border-box;
+	font-family: 'Fondamento', cursive;
+}
+
+.clr{
+	clear:both;
+}
+
+.container{
+	width:1200px;
+	margin:0 auto;
+}
+
+.hr{
+	height:2px;
+	width:200px;
+	display: block;
+	background:red;
+	margin:0 auto;
+	margin-bottom:30px;
+}
+
+/* Logo Design Start */
+.header{
+	background-color:#bdc3c7;
+	border-bottom:2px solid red;
+}
+.logo_area{
+	margin-left:2rem;
+	width:57%;
+	display:inline-block;
+	float:left;
+}
+
+.logo_area h1{
+	text-shadow:2px 2px #ef5350;
+	letter-spacing:5px;
+	margin-bottom:0;
+	padding-bottom:0;
+	font-size:40px;
+}
+
+.logo_area p{
+	font-size:18px;
+	color:#888;
+}
+
+/* Logo Design End */
+
+/* Navigation design start */
+.nav_area{
+	display: inline-block;
+	width:40%;
+	float:right;
+	margin:30px 0px 5px 0px;
+
+}
+
+
+.nav li{
+	list-style-type:none;
+	display:inline-block;
+	margin-left:15px;
+	position:relative;
+}
+
+.nav li a{
+	text-decoration:none;
+	text-transform: uppercase;
+	color:#ef5350;
+	font-size:16px;
+	font-weight:bold;
+	position:relative;
+	padding:5px 2px;
+}
+
+.nav li a.active{
+	color:black;
+	background: #EEEEEE
+}
+
+.nav li a:hover .nav li a.active{
+	color:black;
+	background: #EEEEEE
+}
+
+.nav li:last-child{
+	margin-right:0;
+}
+
+.nav li~a{
+	font-weight: bold;
+}
+
+.nav li a i{
+	margin:0 3px;
+}
+
+.nav li a{
+	color:black;
+	background-color:#fff;
+}
+/* Navigation design End */
+
+.nav li a:before{
+	content:"";
+	width:0%;
+	height:2px;
+	background-color:#ef5350;
+	position:absolute;
+	top:0;
+	left:0;
+	transition:1s;
+	transform:lowercase;
+
+}
+
+.nav li a:hover:before{
+	width:100%;
+}
+
+.nav li a:after{
+	content:"";
+	width:0%;
+	height:1.5px;
+	background-color:#ef5350;
+	position:absolute;
+	bottom:0;
+	right:0;
+	transition:1s;
+	transform:lowercase;
+
+}
+
+.nav li a:hover:after{
+	width:100%;
+}
+
+/* Sticky Navbar design start */
+.sticky_sideber{
+	
+}
+
+.sticky_social_media{
+	position:fixed;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+
+.sticky_social_media a{
+	display:block;
+	text-align:center;
+	padding:16px;
+	transition:all 0.8s ease;
+	color:white;
+	font-size:20px;
+	border-radius:0px 50px 50px 0px;
+	margin:1px 0px;
+}
+
+.sticky_social_media a:hover{
+	background-image:linear-gradient(red, black)
+}
+
+.facebook{
+	background: #3B5998;
+ 	 color: white;
+}
+
+.linkedin{
+	 background: #007bb5;
+  color: white;
+}
+
+.twitter{
+	background-color:#1DA1F2;
+	color:white;
+}
+
+.behance{
+	background-color:#1769FF;
+	color:white;
+}
+/* Sticky Navbar design start */
+
+/* About section design start*/
+.welcome_section{
+	background-image:linear-gradient(#00000075,#00000075),
+	linear-gradient(#00000075,#00000075),
+	url('https://usersnap.com/blog/wp-content/uploads/2017/04/web-design-background.png');
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	padding:100px 0px;
+
+}
+
+.welcome{
+	width:60%;
+	display:inline-block;
+	float:left;
+	padding:30px;
+}
+
+.welcome h1{
+	font-size:50px;
+	color:#fff;
+}
+
+.welcome h3{
+	color:#fff;
+}
+
+.design{
+	color:red;
+}
+
+.welcome p{
+	font-size:20px;
+	text-align: justify;
+	color:#fff;
+}
+
+.welcome button{
+	padding:15px 25px;
+	border-radius:5px;
+	background-color:red;
+	border:none;
+	outline:none;
+	border:1px solid black;
+	margin-top:30px;
+}
+
+.welcome button a{
+	font-size:20px;
+	color:#fff;
+	text-decoration:none
+}
+
+.myimage{
+	width:30%;
+	display:inline-block;
+	float:right;
+	position:relative;
+	overflow:hidden;
+	border-radius:50%;
+	box-shadow:0px 0px 10px 2px #ae9494;
+} 
+
+.myimage img{
+	width:100%;
+	height:100%;
+	cursor:pointer;
+}
+
+.contact{
+	position: absolute;
+	top: 0%;
+	right: 100%;
+	width: 100%;
+	height: 100%;
+	background-color:#00000050;
+	overflow: hidden;
+	transition:1s;
+}
+
+.myimage:hover .contact{
+	right:0%;
+}
+.contact h1{
+	color:#fff;
+	margin-top:100px;
+	margin-left:50px;
+	margin-bottom:0px;
+}
+
+.contact_a{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+
+.contact_a ul li{
+	display: inline-block;
+}
+
+.contact_a ul li a{
+	margin:5px;
+}
+
+.contact_a ul li a i{
+	font-size:18px;
+	color:#fff;
+	transition:0.5s;
+}
+
+.contact_a ul li a i:hover{
+	font-size:20px;
+	color:#ef5350;
+	padding:10px;
+	background:white;
+	border-radius:50%;
+}
+
+
+
+/* service section design start */
+.service_section{
+	padding:60px 0px;
+}
+
+.service_title{
+	text-align: center;
+}
+
+.service_title h1{
+	margin-top:50px;
+}
+
+
+.services{
+
+}
+
+.service{
+	width:27%;
+	height:150px;
+	display:inline-block;
+	padding:20px 30px 10px 15px;
+	box-shadow:0px 0px 5px 2px;
+	margin:10px 12px;
+}
+
+.service:hover .service_content h3{
+	color:red;
+}
+
+.service_icon{
+	width:20%;
+	display: inline-block;
+	float:left;
+}
+
+.service_icon i{
+	font-size:25px;
+	color:red;
+	margin:5px 0px;
+}
+
+.service_content{
+	width:80%;
+	display: inline-block;
+	float:left;
+}
+
+.service_content p{
+	text-align:justify;
+}
+
+.service_content h3{
+	margin:0;
+}
+
+/* Experience design start here */
+.experience_section{
+	background-color:#c8c4c4;
+	padding:60px 0px;
+}
+
+.experience_title h1{
+	text-align: center;
+}
+
+.experience{
+	width:25%;
+	display:inline-block;
+	float:left;
+	margin:10px 20px;
+	padding:20px 30px;
+	transition: all 1s;
+}
+
+
+.experience i{
+	font-size:30px;
+	color:red;
+}
+
+.experience h3{
+		margin:10px 0px 2px 0px;
+}
+
+.experience em{
+	margin-bottom:20px;
+	display: block;
+}
+
+.experience p{
+	text-align:justify;
+	font-size:17px;
+}
+
+.experience:hover{
+	box-shadow: 0px 0px 10px 1px;
+}
+
+.experience:hover.experience h3{
+	color:red;
+}
+
+/* Experience design end here */
+
+/* about me section design start here */
+.about_me{
+	padding:50px 50px;
+}
+
+.mydetails{
+	text-align:center;
+}
+/* about me section design start here */
+
+/* Footer section design */
+.footer{
+	padding:20px 0px;
+	background-color:red;
+	text-align: center;
+	font-size:20px;
+}
+/* Footer section design end */
